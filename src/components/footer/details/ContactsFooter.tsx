@@ -6,7 +6,7 @@ const ContactsFooter = () => {
   return (
     <div className="flex flex-row justify-between max-[767px]:flex-col max-[767px]:items-start">
       <div className="max-[767px]: w-full max-w-[560px] max-[991px]:mr-4 max-[991px]:flex-initial">
-        <h2 className="text-4xl font-bold md:text-2xl">
+        <h2 className="font-bold md:text-2xl">
           {" "}
           Und wenn Sie keine Formulare mögen, schicken Sie mir einfach eine
           E-Mail{" "}

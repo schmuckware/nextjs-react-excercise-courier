@@ -14,7 +14,7 @@ const Tooltip = ({ children }: TooltipProps) => {
           {showTooltip && (
             <div className="absolute bottom-[170%] left-1/2 -translate-x-1/2 gap-4">
               <div className="relative w-[90vw] max-w-sm flex-col items-start gap-4 rounded-md bg-[#f2f2f7] p-6 md:max-w-[240px] border-black border-2">
-                <p className="text-sm text-[#636262] sm:text-base">
+                <p className="text-sm text-[#636262] xs:text-base">
                   {children}
                 </p>
                 <div className="mt-8 flex justify-center">

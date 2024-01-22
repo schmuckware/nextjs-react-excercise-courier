@@ -4,12 +4,12 @@ export default function Home() {
       <>
         <header>
           <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
-            <div className="grid items-center justify-items-start gap-8 sm:gap-20 lg:grid-cols-2">
+            <div className="grid items-center justify-items-start gap-8 xs:gap-20 lg:grid-cols-2">
               <div className="flex flex-col">
                 <h1 className="mb-4 text-4xl font-bold md:text-6xl">
                   The Website You Want Without The Dev Time.
                 </h1>
-                <p className="mb-6 max-w-lg text-sm text-[#636262] sm:text-xl md:mb-10 lg:mb-12">
+                <p className="mb-6 max-w-lg text-sm text-[#636262] xs:text-xl md:mb-10 lg:mb-12">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                   aliquam, purus sit amet luctus venenatis, lectus
                 </p>

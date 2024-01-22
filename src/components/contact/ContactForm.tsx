@@ -20,7 +20,7 @@ const ContactForm = () => {
           <form
             name="wf-form-name"
             method="get"
-            className="mx-auto mb-4 text-left sm:px-4 md:px-20"
+            className="mx-auto mb-4 text-left xs:px-4 md:px-20"
           >
             <div className="mb-4 grid w-full grid-cols-2 gap-6">
               <div>
@@ -68,10 +68,13 @@ const ContactForm = () => {
                 {" "}
               </textarea>
             </div>
-            {/* Mobile style switch button for privacy policy */}
-            <label className="relative inline-flex items-center mb-5 cursor-pointer">
-              <input type="checkbox" value="" className="sr-only peer" />
-              <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-0 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+
+            <label className="font-mediume mb-1 flex items-center justify-start pb-4 pl-5">
+              <input
+                type="checkbox"
+                name="checkbox-2"
+                className="-ml-[20px] align-middle"
+              />
               <span className="ml-4 inline-block cursor-pointer text-sm">
                 By selecting this, you agree to the
                 <a href="impressum">

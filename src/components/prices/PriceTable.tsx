@@ -14,26 +14,39 @@ const PriceTable = () => {
               Simple & fixed pricing. 30 days money-back guarantee
             </p>
           </div>
-          <div className="hidden text-center md:block">
-            <div className="grid grid-cols-[0.3fr_1fr_1fr] gap-4">
+
+          <div
+            // TODO: So wie hier den dark mode einbauen
+            className="block xs:hidden font-medium p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
+            role="alert"
+          >
+            Hier sollte eigentlich eine Tabelle mit den Preisen sein, aber ihr
+            Screen ist zu klein.
+          </div>
+
+          {/* Start of Table */}
+          <div className="hidden text-center xs:block">
+            <div className="grid xs:grid-cols-[1.2fr_1fr_1fr] sm:grid-cols-[1fr_1fr_1fr] gap-4">
               <div className=""></div>
               <div className="">
-                <p className="text-3xl font-bold">Transporter</p>
+                <p className="xs:text-xl md:text-3xl font-bold">Transporter</p>
                 <p className="text-sm font-semibold">Auf Minutenbasis</p>
               </div>
               <div className="">
-                <p className="text-3xl font-bold">Kombi</p>
+                <p className="xs:text-xl md:text-3xl font-bold">Kombi</p>
                 <p className="text-sm font-semibold">Auf Minutenbasis</p>
               </div>
             </div>
 
             {Object.keys(data.preise.aufMinutenbasis).map((rowName) => (
               <div
-                className="grid grid-cols-[0.3fr_1fr_1fr] py-8 [border-bottom:1px_solid_rgb(233,_240,_241)] lg:grid-cols-[0.3fr_1fr_1fr]"
+                className="grid xs:grid-cols-[1.2fr_1fr_1fr] sm:grid-cols-[1fr_1fr_1fr] py-8 [border-bottom:1px_solid_rgb(233,_240,_241)]"
                 key={rowName}
               >
                 <div className="flex items-center">
-                  <p className="font-semibold">{rowName}</p>
+                  <p className="md:font-semibold xs:font-medium xs:text-sm">
+                    {rowName}
+                  </p>
                   <div className="ml-2">
                     <div className="flex h-4 w-4 cursor-pointer items-center justify-center rounded-[50%] bg-[#e9f0f1] text-xs font-bold text-[#0b0b1f54]">
                       <Tooltip>
@@ -61,7 +74,7 @@ const PriceTable = () => {
               </div>
             ))}
 
-            <div className="grid grid-cols-[0.3fr_1fr_1fr] gap-8 pt-8 lg:grid-cols-[0.3fr_1fr_1fr]">
+            <div className="grid xs:grid-cols-[1.2fr_1fr_1fr] sm:grid-cols-[1fr_1fr_1fr] gap-8 pt-8">
               <div></div>
               <div>
                 <a
