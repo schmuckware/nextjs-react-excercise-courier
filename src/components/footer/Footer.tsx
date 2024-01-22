@@ -1,6 +1,6 @@
 "use client";
 
-import ContactsFooter from "./ContactsFooter";
+import ContactsFooter from "./details/ContactsFooter";
 
 const Footer = () => {
   return (

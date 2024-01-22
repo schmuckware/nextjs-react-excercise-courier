@@ -35,6 +35,7 @@ export default function Home() {
                   </a>
                 </div>
               </div>
+              {/* TODO: Hier im Darkmode ein nächtliches AI Bild mit Kourierfahrer durch HH und im hellen Mode dann bei Tageslicht */}
               <img
                 src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940836e6cf8d_Group%2047854%20(2).svg"
                 alt=""
