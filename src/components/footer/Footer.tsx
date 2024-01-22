@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24">
         <div className="flex flex-row justify-between max-[767px]:flex-col max-[767px]:items-start">
           <div className="max-[767px]: w-full max-w-[560px] max-[991px]:mr-4 max-[991px]:flex-initial">
-            <h2 className="text-3xl font-bold md:text-5xl">
+            <h2 className="text-4xl font-bold md:text-3xl">
               {" "}
               Lightning Fast Webflow Dev made easy{" "}
             </h2>

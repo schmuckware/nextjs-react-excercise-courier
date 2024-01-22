@@ -16,12 +16,12 @@ export default function Home() {
                   aliquam, purus sit amet luctus venenatis, lectus
                 </p>
                 <div className="flex items-center">
-                  <a
+                  {/* <a
                     href="#"
                     className="mr-5 items-center rounded-md bg-black px-6 py-3 font-semibold text-white md:mr-6 lg:mr-8"
                   >
-                    Let's Talk
-                  </a>
+                    Preise ansehen
+                  </a> */}
                   <a
                     href="#"
                     className="flex max-w-full items-center font-bold"
@@ -31,7 +31,7 @@ export default function Home() {
                       alt=""
                       className="mr-2 inline-block max-h-4 w-5"
                     />
-                    <p>View Showreel</p>
+                    <p>Preise ansehen</p>
                   </a>
                 </div>
               </div>
