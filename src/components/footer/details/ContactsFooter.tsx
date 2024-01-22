@@ -1,12 +1,10 @@
-import React from "react";
-
 const ContactsFooter = () => {
   return (
     <div className="flex flex-row justify-between max-[767px]:flex-col max-[767px]:items-start">
       <div className="max-[767px]: w-full max-w-[560px] max-[991px]:mr-4 max-[991px]:flex-initial">
         <h2 className="text-4xl font-bold md:text-3xl">
           {" "}
-          Lightning Fast Webflow Dev made easy{" "}
+          Oder schicken Sie mir eine E-Mail{" "}
         </h2>
       </div>
       <div className="max-[767px]: max-[991px]:ml-4 max-[991px]:flex-none max-[767px]:mt-8">
@@ -29,6 +27,7 @@ const ContactsFooter = () => {
           />
           <p className="text-[#636262] max-[479px]:text-sm">
             {" "}
+            {/* Create a constants.ts file that includes all data that might change */}
             support@flowspark.co{" "}
           </p>
         </div>

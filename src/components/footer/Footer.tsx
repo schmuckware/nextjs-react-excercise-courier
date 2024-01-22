@@ -1,5 +1,3 @@
-"use client";
-
 import ContactsFooter from "./details/ContactsFooter";
 
 const Footer = () => {

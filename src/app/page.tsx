@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <main>
@@ -16,12 +14,6 @@ export default function Home() {
                   aliquam, purus sit amet luctus venenatis, lectus
                 </p>
                 <div className="flex items-center">
-                  {/* <a
-                    href="#"
-                    className="mr-5 items-center rounded-md bg-black px-6 py-3 font-semibold text-white md:mr-6 lg:mr-8"
-                  >
-                    Preise ansehen
-                  </a> */}
                   <a
                     href="#"
                     className="flex max-w-full items-center font-bold"

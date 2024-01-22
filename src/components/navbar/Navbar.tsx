@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <section>
@@ -7,7 +9,7 @@ const Navbar = () => {
           x-data="{isOpen: false, menuOne:false}"
         >
           <div className="flex flex-col px-6 py-6 lg:flex-row lg:items-center lg:justify-between lg:px-10 lg:py-4 xl:px-20">
-            <a href="#">
+            <Link href="/">
               <svg
                 className="relative left-5 lg:inset-0"
                 width="75"
@@ -21,20 +23,20 @@ const Navbar = () => {
                   fill="black"
                 ></path>
               </svg>
-            </a>
+            </Link>
             <div className="mt-14 flex flex-col space-y-8 lg:mt-0 lg:flex lg:flex-row lg:space-x-1 lg:space-y-0">
-              <a
-                href="#"
+              <Link
+                href="preise"
                 className="font-inter rounded-lg lg:px-6 lg:py-4 lg:hover:bg-gray-50 lg:hover:text-gray-800"
               >
-                Templates
-              </a>
-              <a
-                href="#"
+                Preise
+              </Link>
+              <Link
+                href="kontakt"
                 className="font-inter rounded-lg lg:px-6 lg:py-4 lg:hover:bg-gray-50 lg:hover:text-gray-800"
               >
-                Pricing
-              </a>
+                Kontakt
+              </Link>
               <a
                 href="#"
                 className="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-50 lg:hover:text-gray-800"
