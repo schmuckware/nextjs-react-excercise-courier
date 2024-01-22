@@ -1,7 +1,12 @@
+"use client";
+import { useState } from "react";
 import data from "@/data.json";
 import Tooltip from "../Tooltip";
 
 const PriceTable = () => {
+  // State hook to keep track of the active tooltip
+  const [activeIndex, setActiveIndex] = useState(-1);
+
   return (
     <>
       <section>
@@ -30,15 +35,15 @@ const PriceTable = () => {
               <div className=""></div>
               <div className="">
                 <p className="xs:text-xl md:text-3xl font-bold">Transporter</p>
-                <p className="text-sm font-semibold">Auf Minutenbasis</p>
+                <p className="text-sm font-semibold">Auf 15-Minutenbasis</p>
               </div>
               <div className="">
                 <p className="xs:text-xl md:text-3xl font-bold">Kombi</p>
-                <p className="text-sm font-semibold">Auf Minutenbasis</p>
+                <p className="text-sm font-semibold">Auf 15-Minutenbasis</p>
               </div>
             </div>
 
-            {Object.keys(data.preise.aufMinutenbasis).map((rowName) => (
+            {Object.keys(data.preise.aufMinutenbasis).map((rowName, index) => (
               <div
                 className="grid xs:grid-cols-[1.2fr_1fr_1fr] sm:grid-cols-[1fr_1fr_1fr] py-8 [border-bottom:1px_solid_rgb(233,_240,_241)]"
                 key={rowName}
@@ -49,7 +54,11 @@ const PriceTable = () => {
                   </p>
                   <div className="ml-2">
                     <div className="flex h-4 w-4 cursor-pointer items-center justify-center rounded-[50%] bg-[#e9f0f1] text-xs font-bold text-[#0b0b1f54]">
-                      <Tooltip>
+                      <Tooltip
+                        isActive={activeIndex === index}
+                        onShow={() => setActiveIndex(index)}
+                        onClose={() => setActiveIndex(-1)}
+                      >
                         {
                           data.preise.aufMinutenbasis[rowName]["Transporter"]
                             .hinweis
