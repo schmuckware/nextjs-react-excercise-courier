@@ -10,7 +10,7 @@ const PriceTable = () => {
             <h2 className="text-3xl font-bold md:text-5xl">
               Simple & Affordable Pricing
             </h2>
-            <p className="mx-auto mb-8 mt-4 max-w-lg text-[#636262] md:mb-12 lg:mb-16">
+            <p className="mx-auto mb-8 mt-4 max-w-lg text-[#636262] md:mb-20 lg:mb-28">
               Simple & fixed pricing. 30 days money-back guarantee
             </p>
           </div>

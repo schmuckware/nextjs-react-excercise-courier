@@ -1,5 +1,6 @@
 {
   "telefonnummer": "123456789",
+  "email": "test@test.com",
   "preise": {
     "aufMinutenbasis": {
       "Grundpreis": {
