@@ -5,13 +5,13 @@ const Navbar = () => {
     <section>
       <div className="h-auto w-screen">
         <nav
-          className="font-inter mx-auto h-auto w-full max-w-[1600px] sm:relative sm:top-0"
+          className="font-inter mx-auto h-auto w-full max-w-[1600px] xs:relative xs:top-0"
           x-data="{isOpen: false, menuOne:false}"
         >
-          <div className="flex flex-col px-6 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-10 sm:py-4 xl:px-20">
+          <div className="flex flex-col px-6 py-6 xs:flex-row xs:items-center xs:justify-between xs:px-10 xs:py-4 xl:px-20">
             <Link href="/">
               <svg
-                className="relative left-5 sm:inset-0"
+                className="relative left-5 xs:inset-0 hidden sm:block"
                 width="75"
                 height="24"
                 viewBox="0 0 75 24"
@@ -24,27 +24,28 @@ const Navbar = () => {
                 ></path>
               </svg>
             </Link>
-            <div className="mt-14 flex flex-col space-y-8 sm:mt-0 sm:flex sm:flex-row sm:space-x-1 sm:space-y-0">
+            <div className="mt-14 flex flex-col space-y-8 xs:mt-0 xs:flex xs:flex-row xs:space-x-1 xs:space-y-0">
               <Link
                 href="preise"
-                className="font-inter rounded-lg sm:px-6 sm:py-4 sm:hover:bg-gray-50 sm:hover:text-gray-800"
+                className="font-inter rounded-lg xs:px-3 sm:px-6 xs:py-4 xs:hover:bg-gray-50 xs:hover:text-gray-800"
               >
                 Preise
               </Link>
               <Link
                 href="kontakt"
-                className="font-inter rounded-lg sm:px-6 sm:py-4 sm:hover:bg-gray-50 sm:hover:text-gray-800"
+                className="font-inter rounded-lg xs:px-3 xs:py-4 xs:hover:bg-gray-50 xs:hover:text-gray-800"
               >
                 Kontakt
               </Link>
               <a
                 href="#"
-                className="font-inter sm: rounded-lg pb-8 sm:px-6 sm:py-4 sm:hover:bg-gray-50 sm:hover:text-gray-800"
+                className="font-inter xs: rounded-lg pb-8 xs:px-3 xs:py-4 xs:hover:bg-gray-50 xs:hover:text-gray-800"
               >
                 FAQs
               </a>
             </div>
-            <div className="flex flex-col space-y-8 sm:flex sm:flex-row sm:space-x-3 sm:space-y-0">
+            {/* TODO: Der hier macht noch die responsiveness kaputt. Austauschen gegen dark mode button. */}
+            <div className="flex flex-col space-y-8 xs:flex xs:flex-row xs:space-x-3 xs:space-y-0">
               <a
                 className="font-inter rounded-lg bg-black px-8 py-4 text-center text-white hover:bg-gray-800 max-w-[122px]"
                 href="#"
