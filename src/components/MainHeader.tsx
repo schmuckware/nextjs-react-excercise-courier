@@ -1,4 +1,4 @@
-import config from "@/config";
+import config from "@/data.json";
 import { ReactNode } from "react";
 
 interface MainHeaderProps {

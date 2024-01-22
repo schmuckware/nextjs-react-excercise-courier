@@ -1,0 +1,31 @@
+{
+  "telefonnummer": "123456789",
+  "preise": {
+    "aufMinutenbasis": {
+      "Grundpreis": {
+        "Transporter": { "preis": 30.0, "hinweis": "inklusive XXX" },
+        "Kombi": { "preis": 10.0, "hinweis": "inklusive XXX" }
+      },
+      "Kilometerpreis": {
+        "Transporter": { "preis": 1.5, "hinweis": "inklusive XXX" },
+        "Kombi": { "preis": 1.5, "hinweis": "inklusive XXX" }
+      },
+      "Servicezeit": {
+        "Transporter": { "preis": 3.5, "hinweis": "inklusive XXX" },
+        "Kombi": { "preis": 3.5, "hinweis": "inklusive XXX" }
+      },
+      "Zwischenstop": {
+        "Transporter": { "preis": 3.5, "hinweis": "inklusive XXX" },
+        "Kombi": { "preis": 3.5, "hinweis": "inklusive XXX" }
+      },
+      "2. Anfahrt": {
+        "Transporter": { "preis": 10.0, "hinweis": "inklusive XXX" },
+        "Kombi": { "preis": 10.0, "hinweis": "inklusive XXX" }
+      }
+    },
+    "aufStundenbasis": {
+      "Innerhalb Hamburgs": { "preis": 50.0, "hinweis": "inklusive XXX" },
+      "Zuschlag": { "preis": "50 %", "hinweis": "von 21.00 bis 07.00 Uhr und Sonntag ganztägig" }
+    }
+  }
+}
