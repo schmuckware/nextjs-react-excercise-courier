@@ -1,4 +1,8 @@
+"use client";
+import { usePathname } from "next/navigation";
+
 const ContactsFooter = () => {
+  if (usePathname() !== "/kontakt") return null;
   return (
     <div className="flex flex-row justify-between max-[767px]:flex-col max-[767px]:items-start">
       <div className="max-[767px]: w-full max-w-[560px] max-[991px]:mr-4 max-[991px]:flex-initial">

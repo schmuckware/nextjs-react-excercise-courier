@@ -4,7 +4,6 @@ const Footer = () => {
   return (
     <footer className="block">
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24">
-        {/* TODO: Hier den Footer nur bei /kontakt anzeigen */}
         <ContactsFooter />
         <div className="mb-14 mt-16 w-full [border-bottom:1.7px_solid_rgb(0,_0,_0)]"></div>
         <div className="flex flex-row justify-between max-[991px]:items-center max-[767px]:flex-col max-[767px]:items-start max-[479px]:flex-col-reverse">
