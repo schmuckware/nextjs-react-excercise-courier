@@ -1,3 +1,4 @@
+import config from "@/config";
 import React from "react";
 
 const ContactPage = () => {
@@ -8,8 +9,11 @@ const ContactPage = () => {
           <h2 className="text-3xl font-bold md:text-5xl">Kontakt aufnehmen</h2>
           <p className="mx-auto mb-8 mt-4 max-w-lg text-[#636262] md:mb-12 lg:mb-16">
             Oder rufen Sie mich direkt an unter{" "}
-            <a href="tel:PHONE_NUMBER" className="underline">
-              PHONE_NUMBER
+            <a
+              href={`tel:${config.telefonnummer}`}
+              className="underline hover:text-blue-800"
+            >
+              {config.telefonnummer}
             </a>
           </p>
           <form
@@ -72,7 +76,9 @@ const ContactPage = () => {
                 <a href="impressum">
                   {" "}
                   {/* TODO: Add requirement to be pressed here and fix the link */}
-                  <span className="underline">Privacy Policy</span>
+                  <span className="underline hover:text-blue-800">
+                    Privacy Policy
+                  </span>
                 </a>
               </span>
             </label>
