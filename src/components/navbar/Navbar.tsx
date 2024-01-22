@@ -25,7 +25,26 @@ const Navbar = () => {
             <div
               className="mt-14 flex flex-col space-y-8 lg:mt-0 lg:flex lg:flex-row lg:space-x-1 lg:space-y-0"
               x-bindClassName="isOpen ? 'show' : 'hidden'"
-            ></div>
+            >
+              <a
+                href="#"
+                className="font-inter rounded-lg lg:px-6 lg:py-4 lg:hover:bg-gray-50 lg:hover:text-gray-800"
+              >
+                Templates
+              </a>
+              <a
+                href="#"
+                className="font-inter rounded-lg lg:px-6 lg:py-4 lg:hover:bg-gray-50 lg:hover:text-gray-800"
+              >
+                Pricing
+              </a>
+              <a
+                href="#"
+                className="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-50 lg:hover:text-gray-800"
+              >
+                FAQs
+              </a>
+            </div>
             <div
               className="flex flex-col space-y-8 lg:flex lg:flex-row lg:space-x-3 lg:space-y-0"
               x-bindClassName="isOpen ? 'show' : 'hidden'"
