@@ -1,4 +1,4 @@
-import config from "@/data.json";
+import config from "@/config/data.json";
 
 const ContactForm = () => {
   return (
@@ -62,7 +62,6 @@ const ContactForm = () => {
               <input
                 type="text"
                 className="dark:bg-gray-200 mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 text-sm"
-                // TODO: Add client side verification with regex
               />
             </div>
             <div className="mb-5 md:mb-6 lg:mb-8">
@@ -73,7 +72,6 @@ const ContactForm = () => {
                 placeholder=""
                 name="field"
                 className="dark:bg-gray-200 mb-2.5 block h-auto min-h-[186px] w-full rounded-md border border-solid border-black px-3 py-2 text-sm"
-                // TODO: Add client side verification
               ></textarea>
             </div>
 
@@ -96,7 +94,7 @@ const ContactForm = () => {
             </label>
             <input
               type="submit"
-              value="Join Flowspark"
+              value="Senden"
               className="inline-block w-full cursor-pointer bg-black dark:bg-gray-900 dark:border dark:border-gray-200 px-6 py-3 text-center font-semibold text-white"
             />
           </form>

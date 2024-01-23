@@ -1,0 +1,32 @@
+{
+  "telefonnummer": "123456789",
+  "email": "test@test.com",
+  "preise": {
+    "aufMinutenbasis": {
+      "Grundpreis": {
+        "Transporter": { "preis": 30.0, "hinweis": "Hinweistext" },
+        "Kombi": { "preis": 10.0, "hinweis": "Hinweistext" }
+      },
+      "Kilometerpreis": {
+        "Transporter": { "preis": 1.5, "hinweis": "Hinweistext" },
+        "Kombi": { "preis": 1.5, "hinweis": "Hinweistext" }
+      },
+      "Servicezeit": {
+        "Transporter": { "preis": 3.5, "hinweis": "Hinweistext" },
+        "Kombi": { "preis": 3.5, "hinweis": "Hinweistext" }
+      },
+      "Zwischenstop": {
+        "Transporter": { "preis": 3.5, "hinweis": "Hinweistext" },
+        "Kombi": { "preis": 3.5, "hinweis": "Hinweistext" }
+      },
+      "2. Anfahrt": {
+        "Transporter": { "preis": 10.0, "hinweis": "Hinweistext" },
+        "Kombi": { "preis": 10.0, "hinweis": "Hinweistext" }
+      }
+    },
+    "aufStundenbasis": {
+      "Innerhalb Hamburgs": { "preis": 50.0, "hinweis": "Hinweistext" },
+      "Zuschlag": { "preis": "50 %", "hinweis": "von 21.00 bis 07.00 Uhr und Sonntag ganztägig" }
+    }
+  }
+}

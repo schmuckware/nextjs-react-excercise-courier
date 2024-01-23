@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import data from "@/data.json";
+import data from "@/config/data.json";
 import Tooltip from "../Tooltip";
 
 const PriceTable = () => {
@@ -12,15 +12,14 @@ const PriceTable = () => {
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
         <div className="text-center">
           <h2 className="text-3xl font-bold md:text-5xl">
-            Simple & Affordable Pricing
+            Transparent & Günstig
           </h2>
           <p className="dark:text-gray-400 mx-auto mb-8 mt-4 max-w-lg md:mb-20 lg:mb-28">
-            Simple & fixed pricing. 30 days money-back guarantee
+            Nur so lange wie nötig, nur so teuer wie nötig.
           </p>
         </div>
 
         <div
-          // TODO: So wie hier den dark mode einbauen
           className="block xs:hidden font-medium p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-900 dark:text-red-400"
           role="alert"
         >
@@ -82,26 +81,6 @@ const PriceTable = () => {
               )}
             </div>
           ))}
-
-          <div className="grid xs:grid-cols-[1.2fr_1fr_1fr] sm:grid-cols-[1fr_1fr_1fr] gap-8 pt-8">
-            <div></div>
-            <div>
-              <a
-                href="#"
-                className="inline-block border-2 border-solid border-black px-6 py-4 text-center font-semibold transition [box-shadow:rgb(0,_0,0)-8px_8px] hover:[box-shadow:rgb(0,_0,_0)_0px_0px]"
-              >
-                Get Started
-              </a>
-            </div>
-            <div>
-              <a
-                href="#"
-                className="inline-block border-2 border-solid border-black px-6 py-4 text-center font-semibold transition [box-shadow:rgb(0,_0,0)-8px_8px] hover:[box-shadow:rgb(0,_0,_0)_0px_0px]"
-              >
-                Get Started
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>

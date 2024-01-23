@@ -37,12 +37,6 @@ const Navbar = () => {
               >
                 Kontakt
               </Link>
-              <a
-                href="#"
-                className="font-inter xs: rounded-lg pb-8 xs:px-3 sm:px-6 xs:py-4 xs:hover:bg-gray-300 xs:hover:text-gray-900"
-              >
-                FAQs
-              </a>
             </div>
             {/* TODO: Der hier macht noch die responsiveness kaputt. Austauschen gegen dark mode button. */}
             <div className="flex flex-col space-y-8 xs:flex xs:flex-row xs:space-x-3 xs:space-y-0">

@@ -1,4 +1,4 @@
-import PriceTable from "@/components/prices/PriceTable";
+import PriceTable from "@/app/components/prices/PriceTable";
 
 const page = () => {
   return <PriceTable />;

@@ -6,11 +6,11 @@ export default function Home() {
           <div className="grid items-center justify-items-start gap-8 xs:gap-20 lg:grid-cols-2">
             <div className="flex flex-col">
               <h1 className="mb-4 text-4xl font-bold md:text-6xl">
-                The Website You Want Without The Dev Time.
+                Ihr freundlicher Kurierdienst
               </h1>
               <p className="mb-6 max-w-lg text-sm dark:text-gray-400 text-[#636262] xs:text-xl md:mb-10 lg:mb-12">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
-                aliquam, purus sit amet luctus venenatis, lectus
+                Immer dann, wenn es schnell gehen muss, sind wir für Sie da.
+                Egal ob Briefe, Pakete oder sonstige Sendungen.
               </p>
               <div className="flex items-center">
                 <a href="#" className="flex max-w-full items-center font-bold">
