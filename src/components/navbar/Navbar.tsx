@@ -33,13 +33,13 @@ const Navbar = () => {
               </Link>
               <Link
                 href="kontakt"
-                className="font-inter rounded-lg xs:px-3 xs:py-4 xs:hover:bg-gray-300 xs:hover:text-gray-900"
+                className="font-inter rounded-lg xs:px-3 sm:px-6 xs:py-4 xs:hover:bg-gray-300 xs:hover:text-gray-900"
               >
                 Kontakt
               </Link>
               <a
                 href="#"
-                className="font-inter xs: rounded-lg pb-8 xs:px-3 xs:py-4 xs:hover:bg-gray-300 xs:hover:text-gray-900"
+                className="font-inter xs: rounded-lg pb-8 xs:px-3 sm:px-6 xs:py-4 xs:hover:bg-gray-300 xs:hover:text-gray-900"
               >
                 FAQs
               </a>
