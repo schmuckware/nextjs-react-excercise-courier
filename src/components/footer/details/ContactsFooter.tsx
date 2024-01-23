@@ -19,7 +19,7 @@ const ContactsFooter = () => {
             alt=""
             className="mr-3 inline-block"
           />
-          <p className="text-[#636262] max-[479px]:text-sm">
+          <p className="max-[479px]:text-sm">
             {" "}
             8502 Preston Rd. Inglewood, Maine 98380, USA{" "}
           </p>
@@ -30,7 +30,7 @@ const ContactsFooter = () => {
             alt=""
             className="mr-3 inline-block"
           />
-          <p className="text-[#636262] max-[479px]:text-sm">
+          <p className="max-[479px]:text-sm">
             {" "}
             {/* Create a constants.ts file that includes all data that might change */}
             support@flowspark.co{" "}

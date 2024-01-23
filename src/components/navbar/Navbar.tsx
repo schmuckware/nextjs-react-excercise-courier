@@ -3,7 +3,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <section>
-      <div className="h-auto w-screen">
+      <div className="dark:text-white dark:bg-gray-900 h-auto w-screen">
         <nav
           className="font-inter mx-auto h-auto w-full max-w-[1600px] xs:relative xs:top-0"
           x-data="{isOpen: false, menuOne:false}"
@@ -11,7 +11,7 @@ const Navbar = () => {
           <div className="flex flex-col px-6 py-6 xs:flex-row xs:items-center xs:justify-between xs:px-10 xs:py-4 xl:px-20">
             <Link href="/">
               <svg
-                className="relative left-5 xs:inset-0 hidden sm:block"
+                className="dark:filter dark:invert relative left-5 xs:inset-0 hidden sm:block"
                 width="75"
                 height="24"
                 viewBox="0 0 75 24"
@@ -27,19 +27,19 @@ const Navbar = () => {
             <div className="mt-14 flex flex-col space-y-8 xs:mt-0 xs:flex xs:flex-row xs:space-x-1 xs:space-y-0">
               <Link
                 href="preise"
-                className="font-inter rounded-lg xs:px-3 sm:px-6 xs:py-4 xs:hover:bg-gray-50 xs:hover:text-gray-800"
+                className="font-inter rounded-lg xs:px-3 sm:px-6 xs:py-4 xs:hover:bg-gray-300 xs:hover:text-gray-900"
               >
                 Preise
               </Link>
               <Link
                 href="kontakt"
-                className="font-inter rounded-lg xs:px-3 xs:py-4 xs:hover:bg-gray-50 xs:hover:text-gray-800"
+                className="font-inter rounded-lg xs:px-3 xs:py-4 xs:hover:bg-gray-300 xs:hover:text-gray-900"
               >
                 Kontakt
               </Link>
               <a
                 href="#"
-                className="font-inter xs: rounded-lg pb-8 xs:px-3 xs:py-4 xs:hover:bg-gray-50 xs:hover:text-gray-800"
+                className="font-inter xs: rounded-lg pb-8 xs:px-3 xs:py-4 xs:hover:bg-gray-300 xs:hover:text-gray-900"
               >
                 FAQs
               </a>
@@ -47,7 +47,7 @@ const Navbar = () => {
             {/* TODO: Der hier macht noch die responsiveness kaputt. Austauschen gegen dark mode button. */}
             <div className="flex flex-col space-y-8 xs:flex xs:flex-row xs:space-x-3 xs:space-y-0">
               <a
-                className="font-inter rounded-lg bg-black px-8 py-4 text-center text-white hover:bg-gray-800 max-w-[122px]"
+                className="font-inter rounded-lg bg-black dark:bg-gray-900 px-8 py-4 text-center text-white hover:bg-gray-900 max-w-[122px]"
                 href="#"
               >
                 Kontakt

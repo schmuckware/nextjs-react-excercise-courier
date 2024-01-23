@@ -1,18 +1,16 @@
 import config from "@/data.json";
 
-const header = "Kontakt aufnehmen";
-
 const ContactForm = () => {
   return (
-    <div>
+    <div className="dark:text-white dark:bg-gray-900">
       <section>
         <div className="mx-auto max-w-7xl px-5 py-16 text-center md:px-10 md:py-24 lg:py-32">
           <h2 className="text-3xl font-bold md:text-5xl">Kontakt aufnehmen</h2>
-          <p className="mx-auto mb-8 mt-4 max-w-lg text-[#636262] md:mb-12 lg:mb-16">
+          <p className="dark:text-gray-400 mx-auto mb-8 mt-4 max-w-lg md:mb-12 lg:mb-16">
             Gerne können Sie mich anrufen unter{" "}
             <a
               href={`tel:${config.telefonnummer}`}
-              className="underline hover:text-blue-800"
+              className="underline dark:hover:text-blue-300 hover:text-blue-800"
             >
               {config.telefonnummer}
             </a>
@@ -20,7 +18,7 @@ const ContactForm = () => {
             eine E-Mail schreiben an{" "}
             <a
               href={`mailto:${config.email}`}
-              className="underline hover:text-blue-800"
+              className="underline dark:hover:text-blue-300 hover:text-blue-800"
             >
               {config.email}
             </a>
@@ -41,7 +39,7 @@ const ContactForm = () => {
                 </label>
                 <input
                   type="text"
-                  className="mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 text-sm text-[#333333]"
+                  className="dark:bg-gray-200 mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 text-sm"
                   placeholder=""
                   required
                 />
@@ -52,7 +50,7 @@ const ContactForm = () => {
                 </label>
                 <input
                   type="text"
-                  className="mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 text-sm text-[#333333]"
+                  className="dark:bg-gray-200 mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 text-sm"
                   placeholder=""
                 />
               </div>
@@ -63,7 +61,7 @@ const ContactForm = () => {
               </label>
               <input
                 type="text"
-                className="mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 text-sm text-[#333333]"
+                className="dark:bg-gray-200 mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 text-sm"
                 // TODO: Add client side verification with regex
               />
             </div>
@@ -74,12 +72,12 @@ const ContactForm = () => {
               <textarea
                 placeholder=""
                 name="field"
-                className="mb-2.5 block h-auto min-h-[186px] w-full rounded-md border border-solid border-black px-3 py-2 text-sm text-[#333333]"
+                className="dark:bg-gray-200 mb-2.5 block h-auto min-h-[186px] w-full rounded-md border border-solid border-black px-3 py-2 text-sm"
                 // TODO: Add client side verification
               ></textarea>
             </div>
 
-            <label className="font-mediume mb-1 flex items-center justify-start pb-4 pl-5">
+            <label className="dark:text-gray-300 font-mediume mb-1 flex items-center justify-start pb-4 pl-5">
               <input
                 type="checkbox"
                 name="checkbox-2"
@@ -90,7 +88,7 @@ const ContactForm = () => {
                 <a href="impressum">
                   {" "}
                   {/* TODO: Add requirement to be pressed here and fix the link */}
-                  <span className="underline hover:text-blue-800">
+                  <span className="underline dark:hover:text-blue-300 hover:text-blue-800">
                     Privacy Policy
                   </span>
                 </a>
@@ -99,7 +97,7 @@ const ContactForm = () => {
             <input
               type="submit"
               value="Join Flowspark"
-              className="inline-block w-full cursor-pointer bg-black px-6 py-3 text-center font-semibold text-white"
+              className="inline-block w-full cursor-pointer bg-black dark:bg-gray-900 dark:border dark:border-gray-200 px-6 py-3 text-center font-semibold text-white"
             />
           </form>
         </div>

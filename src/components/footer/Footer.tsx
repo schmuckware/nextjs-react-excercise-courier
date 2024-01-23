@@ -2,7 +2,7 @@ import ContactsFooter from "./details/ContactsFooter";
 
 const Footer = () => {
   return (
-    <footer className="block">
+    <footer className="dark:text-white dark:bg-gray-900 block">
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24">
         <ContactsFooter />
         <div className="mb-14 mt-16 w-full [border-bottom:1.7px_solid_rgb(0,_0,_0)]"></div>
@@ -10,37 +10,37 @@ const Footer = () => {
           <div className="max-[991px]: text-center font-semibold max-[991px]:py-1 max-[479px]:mb-4 xs:text-center">
             <a
               href="#"
-              className="inline-block py-1.5 pr-6 font-normal text-[#636262] transition hover:text-[#276EF1] xs:py-2 xs:pr-6 lg:pr-12"
+              className="inline-block py-1.5 pr-6 font-normal transition hover:text-[#276EF1] xs:py-2 xs:pr-6 lg:pr-12"
             >
               About
             </a>
             <a
               href="#"
-              className="inline-block py-1.5 pr-6 font-normal text-[#636262] transition hover:text-[#276EF1] xs:py-2 xs:pr-6 lg:pr-12"
+              className="inline-block py-1.5 pr-6 font-normal transition hover:text-[#276EF1] xs:py-2 xs:pr-6 lg:pr-12"
             >
               Features
             </a>
             <a
               href="#"
-              className="inline-block py-1.5 pr-6 font-normal text-[#636262] transition hover:text-[#276EF1] xs:py-2 xs:pr-6 lg:pr-12"
+              className="inline-block py-1.5 pr-6 font-normal transition hover:text-[#276EF1] xs:py-2 xs:pr-6 lg:pr-12"
             >
               Works
             </a>
             <a
               href="#"
-              className="inline-block py-1.5 pr-6 font-normal text-[#636262] transition hover:text-[#276EF1] xs:py-2 xs:pr-6 lg:pr-12"
+              className="inline-block py-1.5 pr-6 font-normal transition hover:text-[#276EF1] xs:py-2 xs:pr-6 lg:pr-12"
             >
               Support
             </a>
             <a
               href="#"
-              className="inline-block py-1.5 pr-6 font-normal text-[#636262] transition hover:text-[#276EF1] xs:py-2 xs:pr-6 lg:pr-12"
+              className="inline-block py-1.5 pr-6 font-normal transition hover:text-[#276EF1] xs:py-2 xs:pr-6 lg:pr-12"
             >
               Help
             </a>
           </div>
           <div className="max-[991px]:flex-none">
-            <p className="text-[#636262] max-[479px]:text-sm">
+            <p className="max-[479px]:text-sm">
               {" "}
               © Copyright 2021. All rights reserved.{" "}
             </p>
